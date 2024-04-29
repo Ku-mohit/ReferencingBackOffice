@@ -1,12 +1,12 @@
 .sidenav {
     /* background: #e7eff3; */
-    background-image: linear-gradient(to bottom, rgba(212, 211, 221, 0), rgba(1,54,79,255));
-    transition: all .5s ease;
+   background-color: #c5c4c4;
+    transition: all 0.5s ease;
     position: fixed;
     z-index: 1;
-    
-    width: 5rem;
-    height:calc(100% - 3rem);
+    width: 80px;
+    height: calc(100vh - 56px);
+    margin-top: 56px;
     /* box-shadow: 0.06rem 0 0.2rem 0 #8690a3; */
 
 
@@ -44,14 +44,12 @@
             border-radius: 50%;
             background-color: transparent;
             border: none;
-
-           
         }
     }
 }
 
 .sidenav-collapsed {
-    width: 16.5625rem;
+    width: 260px;
 }
 
 .sidenav-nav {

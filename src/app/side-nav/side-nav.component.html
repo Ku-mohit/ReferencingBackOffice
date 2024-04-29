@@ -1,7 +1,7 @@
 <div class="sidenav" [ngClass]="collapsed ? 'sidenav-collapsed': ''" >
     <div class="logo-container">
         <img src="../../assets/arrow-right.svg" *ngIf="!collapsed" style="width:30px" (click)="toggleCollapse()" data-bs-toggle="tooltip" data-bs-placement="right" title="Expand sidebar" />
-         <img src="../../assets/arrow-left.svg"  style="width:30px;"   *ngIf="collapsed" (click)="closeSidenav()" data-bs-toggle="tooltip" data-bs-placement="right" title="Collapse sidebar"/>
+         <img src="../../assets/arrow-left.svg"  style="width:30px;"  *ngIf="collapsed" (click)="closeSidenav()" data-bs-toggle="tooltip" data-bs-placement="right" title="Collapse sidebar"/>
        
     </div>
     <div class="scrollwrap scrollwrap_delayed">

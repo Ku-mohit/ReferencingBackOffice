@@ -1,6 +1,6 @@
 .navbar{
     background-image: linear-gradient(to right, #f1e3eb, #31363F)!important;
-    /* background-color: #31363F; */
+    height: 56px;
 }
 .navbar-brand img{
 width: 140px;

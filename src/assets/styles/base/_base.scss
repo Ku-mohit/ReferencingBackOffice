@@ -700,6 +700,15 @@ section {
 
 .content-main {
     display: block;
+    width: calc(100% - 80px);
+    padding: 20px;
+    margin-left: 80px;
+    padding-top: 70px;
+}
+
+.content-main.expanded-sidebar {
+    width: calc(100% - 260px);
+    margin-left: 260px;
 }
 
 .ctrl-no-lbl {
