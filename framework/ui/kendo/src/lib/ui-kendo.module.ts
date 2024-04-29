@@ -7,6 +7,7 @@ import { FormlyCheckboxModule } from '../../checkbox';
 import { FormlySelectModule } from '../../select';
 import { FormlyDatePickerModule } from '../../datepicker';
 import { FormlyGridModule } from '../../grid';
+import { FormlyButtonModule } from '../../button';
 
 @NgModule({
   imports: [
@@ -17,7 +18,8 @@ import { FormlyGridModule } from '../../grid';
     FormlyCheckboxModule,
     FormlySelectModule,
     FormlyDatePickerModule,
-    FormlyGridModule
+    FormlyGridModule,
+    FormlyButtonModule
   ],
 })
 export class FormlyKendoModule {}

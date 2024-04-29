@@ -28,19 +28,28 @@ export class DashboardComponent {
         fieldGroupClassName: 'row my-2',
         fieldGroup: [
           {
-            className: 'col-sm-3',
+            className: 'col-sm-2',
             type: 'input',
             key: 'applicantId',
             props: {
               label: 'Applicant ID',
+              required:true
             },
           },
           {
-            template: `<button style:"display:flex;text-align:center;justify-content:center">Search</button>`,
-            className: 'col-sm-1 btn btn-outline-primary btn-sm',
+            className: 'col-sm-1 my-4',
+            type: 'button',
+            props: {
+              text: 'Search',
+              btnType: 'info',
+              onClick: () => {
+                console.log('clicked');
+              },
+              // description: 'These can have labels and stuff too if you want....',
+            },
           },
           {
-            className: 'col-sm-2',
+            className: 'col-sm-3',
             key: 'status',
             type: 'select',
             props: {
@@ -82,16 +91,25 @@ export class DashboardComponent {
         fieldGroupClassName: 'row',
         fieldGroup: [
           {
-            className: 'col-sm-4',
+            className: 'col-sm-2',
             type: 'input',
             key: 'globalSearch',
             props: {
               label: 'Global Search',
             },
           },
+          
           {
-            template: `<button style:"display:flex;text-align:center;justify-content:center">Search</button>`,
-            className: 'col-sm-1 btn btn-outline-primary btn-sm',
+            className: 'col-1 my-4',
+            type: 'button',
+            props: {
+              text: 'Search',
+              btnType: 'info',
+              onClick: () => {
+                console.log('clicked');
+              },
+              // description: 'These can have labels and stuff too if you want....',
+            },
           },
           {
             className: 'col-sm-3',
@@ -108,7 +126,7 @@ export class DashboardComponent {
             },
           },
           {
-            className: 'col-sm-4',
+            className: 'col-sm-6',
             type: 'input',
             key: 'agentName',
             props: {
@@ -121,7 +139,7 @@ export class DashboardComponent {
         fieldGroupClassName:'row',
         fieldGroup:[
           {
-            className: 'col-sm-3',
+            className: 'col-sm-6',
             key: 'highRiskTaskId',
             type: 'select',
             props: {
@@ -135,7 +153,7 @@ export class DashboardComponent {
             },
           },
           {
-            className: 'col-sm-3',
+            className: 'col-sm-6',
             key: 'validationTask',
             type: 'select',
             props: {
