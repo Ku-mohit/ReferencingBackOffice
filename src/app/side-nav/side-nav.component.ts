@@ -61,5 +61,7 @@ export class SideNavComponent {
       }
     }
   }
-
+  RenderEmployerModule(){
+    this.router.navigate(['./features-module/employer/app-employer-details'])
+  }
 }

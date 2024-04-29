@@ -34,14 +34,12 @@
 <!-- Navbar End -->
 
 <!-- sidebar begin -->
-<app-side-nav></app-side-nav>
-<!-- sidebar End -->
-<div class="container-fluid quote wow fadeIn" data-wow-delay="0.1s"
-style="visibility: visible; animation-delay: 0.1s; animation-name: fadeIn;">
-<router-outlet></router-outlet>
+<div class="container-main">
+  <div class="sidebar-container">
+    <app-side-nav></app-side-nav>
+  </div>
+  <div class="content-main">
+    <router-outlet></router-outlet>
+  </div>
 </div>
 
-
-<!-- Footer Begin-->
-
-<!-- Footer End-->
