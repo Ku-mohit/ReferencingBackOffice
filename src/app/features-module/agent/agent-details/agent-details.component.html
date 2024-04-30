@@ -1,16 +1,16 @@
 <div class="agent-main-container">
     <h4 class="text-center">Agent Details</h4>
     <div class="options-btn my-3">
-          <div class="fun-btn">
-            <img src="../../../../assets/funnel.svg" width="25" alt="" srcset="" />
+          <div class="fun-btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Filter">
+            <img src="../../../../assets/funnel.svg" width="20" alt="" srcset=""  />
           </div>
-          <div class="fun-btn">
-            <img src="../../../../assets/repeat.svg" width="25" alt="" srcset="" />
+          <div class="fun-btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Refresh">
+            <img src="../../../../assets/repeat.svg" width="20" alt="" srcset="" />
           </div>
         
     </div>
     <div class="filter-row" >
-        <div class="row">
+        <div class="row" style="margin-top:5rem">
             <div class="col-3">
                 <div class="form-group">
                     <label for="">Search Agent</label>
@@ -43,7 +43,7 @@
             </div>
         </div>
     </div>
-    <div class="grid-container">
+    <div class="grid-container" style="margin-top: 2rem;">
         <table class="table table-hover text-center">
             <thead >
               <tr>
@@ -55,19 +55,19 @@
             </thead>
             <tbody>
               <tr>
-                <th scope="row">Ema Tempa</th>
+                <th scope="row"><a routerLink="agent-info">Ema Tempa</a></th>
                 <td>National</td>
                 <td>Live</td>
                 <td>5678</td>
               </tr>
               <tr>
-                <th scope="row">John Doe</th>
+                <th scope="row"><a routerLink="agent-info">John Doe</a></th>
                 <td>International</td>
                 <td>Stop</td>
                 <td>5432</td>
               </tr>
               <tr>
-                <th scope="row">Meera Khatri</th>
+                <th scope="row"><a routerLink="agent-info">Meera Khatri</a></th>
                 <td>Cities</td>
                 <td>Live</td>
                 <td>5433</td>

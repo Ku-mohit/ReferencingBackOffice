@@ -6,20 +6,20 @@
         <span>ADD COMPANY</span>
       </button>
     </div>
-    <div class="options-btn">
+    <div class="options-btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Download">
       <div class="fun-btn">
         <img
           src="../../../../assets/download.svg"
-          width="25"
+          width="20"
           alt=""
           srcset=""
         />
       </div>
-      <div class="fun-btn">
-        <img src="../../../../assets/funnel.svg" width="25" alt="" srcset="" />
+      <div class="fun-btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Filter">
+        <img src="../../../../assets/funnel.svg" width="20" alt="" srcset="" />
       </div>
-      <div class="fun-btn">
-        <img src="../../../../assets/repeat.svg" width="25" alt="" srcset="" />
+      <div class="fun-btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Refresh">
+        <img src="../../../../assets/repeat.svg" width="20" alt="" srcset="" />
       </div>
     </div>
   </div>
@@ -63,12 +63,13 @@
           <th scope="col">Acknowledge Receipt Required</th>
           <th scope="col">Salary Confirmation Required</th>
           <th scope="col">Fee Required</th>
+          <th scope="col">Comment</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td><a href="#" class="applicant-id">adv435d</a></td>
-          <td>Let Alliance</td>
+          <td>adv435d</td>
+          <th scope="row"><a routerLink="company-info">Let Alliance</a></th>
           <td>John Doe</td>
           <td>08908088975</td>
           <td>8672345678</td>
@@ -84,10 +85,11 @@
           <td>No</td>
           <td>Yes</td>
           <td>Yes</td>
+          <td>Do something</td>
         </tr>
         <tr>
-          <td><a href="#" class="applicant-id">adv435d</a></td>
-          <td>Let Alliance</td>
+          <td>adv435</td>
+          <th scope="row"><a routerLink="company-info">Tesco</a></th>
           <td>John Doe</td>
           <td>08908088975</td>
           <td>8672345678</td>
@@ -103,10 +105,11 @@
           <td>No</td>
           <td>Yes</td>
           <td>Yes</td>
+          <td>Do something</td>
         </tr>
         <tr>
-          <td><a href="#" class="applicant-id">adv435d</a></td>
-          <td>Let Alliance</td>
+          <td>adv435d</td>
+          <th scope="row"><a routerLink="company-info">Let Alliance</a></th>
           <td>John Doe</td>
           <td>08908088975</td>
           <td>8672345678</td>
@@ -122,10 +125,11 @@
           <td>No</td>
           <td>Yes</td>
           <td>Yes</td>
+          <td>Do something</td>
         </tr>
         <tr>
-          <td><a href="#" class="applicant-id">adv435d</a></td>
-          <td>Let Alliance</td>
+          <td>adv435d</td>
+          <th scope="row"><a routerLink="company-info">Tulip Ltd</a></th>
           <td>John Doe</td>
           <td>08908088975</td>
           <td>8672345678</td>
@@ -141,6 +145,7 @@
           <td>No</td>
           <td>Yes</td>
           <td>Yes</td>
+          <td>Do something</td>
         </tr>
       </tbody>
     </table>

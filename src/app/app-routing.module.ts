@@ -7,7 +7,7 @@ const routes: Routes = [
     loadChildren: () => import('./features-module/features-module.module').then(m => m.FeaturesModuleModule)
   },
   { path: '', redirectTo: '/features-module/application/dashboard', pathMatch: 'full' },
-  { path: './app-employer-details', component: EmployerDetailsComponent},
+
 
 ];
 

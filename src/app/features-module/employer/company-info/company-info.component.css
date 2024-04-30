@@ -1,0 +1,13 @@
+table{
+    border:0px;
+    width: 100%;
+    text-align: start;
+}
+table tr th, table tr td{
+    width: 200px;
+    margin:15px;
+    padding: 12px;
+}
+table tr:hover{
+    background-color: rgba(181, 173, 181, 0.203);
+}

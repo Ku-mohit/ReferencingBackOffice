@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { EmployerRoutingModule } from './employer-routing.module';
 import { EmployerDetailsComponent } from './employer-details/employer-details.component';
+import { CompanyInfoComponent } from './company-info/company-info.component';
 
 
 @NgModule({
   declarations: [
-    EmployerDetailsComponent
+    EmployerDetailsComponent,
+    CompanyInfoComponent
   ],
   imports: [
     CommonModule,

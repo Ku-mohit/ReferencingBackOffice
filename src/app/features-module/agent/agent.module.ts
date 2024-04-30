@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { AgentRoutingModule } from './agent-routing.module';
 import { AgentDetailsComponent } from './agent-details/agent-details.component';
+import { AgentInfoComponent } from './agent-info/agent-info.component';
 
 
 @NgModule({
   declarations: [
-    AgentDetailsComponent
+    AgentDetailsComponent,
+    AgentInfoComponent
   ],
   imports: [
     CommonModule,

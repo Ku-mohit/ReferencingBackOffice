@@ -1,0 +1,24 @@
+.summary-box{
+    width:100%;
+    /* border: 1px solid #c5c0c0ee; */
+   padding: 13px;
+   border-radius: 3px;
+
+
+}
+/* .summary-box:hover{
+    box-shadow:1px 2px 5px #a59f9fee ;
+} */
+table{
+    border:0px;
+    width: 100%;
+    text-align: start;
+}
+table tr th, table tr td{
+    width: 200px;
+    margin:15px;
+    padding: 12px;
+}
+table tr:hover{
+    background-color: rgba(181, 173, 181, 0.203);
+}
