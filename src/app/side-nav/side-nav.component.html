@@ -6,8 +6,8 @@
     </div>
     <div class="scrollwrap scrollwrap_delayed">
         <ul class="sidenav-nav">
-            <li class="sidenav-nav-item active">
-                <a class="sidenav-nav-link" href="#">
+            <li class="sidenav-nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Application" [ngClass]="IsApplication === true ? 'active' : ''">
+                <a class="sidenav-nav-link" (click)="RenderApplication()">
                     <img src="../../assets/house.svg" class="sidenav-link-icon"/>
                     <span class="sidenav-link-text"  *ngIf="collapsed">
                        Application
@@ -35,8 +35,8 @@
                     ></app-sublevel-menu>
                 </div> -->
             </li>
-            <li class="sidenav-nav-item">
-                <a class="sidenav-nav-link" href="#">
+            <li class="sidenav-nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Properties" [ngClass]="IsProperties === true ? 'active' : ''">
+                <a class="sidenav-nav-link" (click)="RenderProperties()">
                     <img src="../../assets/list.svg" class="sidenav-link-icon"/>
                     <span class="sidenav-link-text"  *ngIf="collapsed">
                        Properties
@@ -45,8 +45,8 @@
                 </a>
 
             </li>
-            <li class="sidenav-nav-item">
-                <a class="sidenav-nav-link" href="#" (click)="RenderEmployerModule()">
+            <li class="sidenav-nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Employer" [ngClass]="IsEmployer === true ? 'active' : ''">
+                <a class="sidenav-nav-link"  (click)="RenderEmployer()">
                     <img src="../../assets/person.svg" class="sidenav-link-icon"/>
                     <span class="sidenav-link-text"  *ngIf="collapsed">
                        Employer
@@ -55,8 +55,8 @@
                 </a>
 
             </li>
-            <li class="sidenav-nav-item">
-                <a class="sidenav-nav-link" href="#">
+            <li class="sidenav-nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Agent" [ngClass]="IsAgent === true ? 'active' : ''">
+                <a class="sidenav-nav-link" (click)="RenderAgent()">
                     <img src="../../assets/person-badge.svg" class="sidenav-link-icon"/>
                     <span class="sidenav-link-text" *ngIf="collapsed">
                        Agent

@@ -4,11 +4,11 @@ import { EmployerModule } from './employer.module';
 import { EmployerDetailsComponent } from './employer-details/employer-details.component';
 
 const routes: Routes = [
-  {path:'',component:EmployerDetailsComponent}
+  { path: 'employer-details', component: EmployerDetailsComponent },
 ];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class EmployerRoutingModule { }
+export class EmployerRoutingModule {}

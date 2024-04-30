@@ -2,6 +2,7 @@ import { Component, EventEmitter, HostListener, Output } from '@angular/core';
 import { Router } from '@angular/router';
 import { INavbarData, fadeInOut } from './helper';
 import {navbarData} from './side-nav_data';
+import { BlockLike } from 'typescript';
 interface SideNavToggle {
   screenWidth: number;
   collapsed: boolean;
@@ -18,6 +19,11 @@ export class SideNavComponent {
   @Output() onToggleSideNav: EventEmitter<SideNavToggle> = new EventEmitter();
   screenWidth = 0;
   multiple: boolean = false;
+
+  IsApplication:boolean=true;
+  IsProperties:boolean= false;
+  IsEmployer:boolean=false;
+  IsAgent:boolean=false;
 
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
@@ -61,7 +67,34 @@ export class SideNavComponent {
       }
     }
   }
-  RenderEmployerModule(){
-    this.router.navigate(['./features-module/employer/app-employer-details'])
+  RenderApplication(){
+    this.router.navigate(['app-dashboard']);
+    this.IsProperties=false;
+    this.IsApplication=true;
+    this.IsEmployer=false;
+    this.IsAgent=false;
   }
+  RenderProperties(){
+    this.router.navigate(['properties-details']);
+    this.IsProperties=true;
+    this.IsApplication=false;
+    this.IsEmployer=false;
+    this.IsAgent=false;
+  
+  }
+  RenderEmployer(){
+    this.router.navigate(['employer-details']);
+    this.IsProperties=false;
+    this.IsApplication=false;
+    this.IsEmployer=true;
+    this.IsAgent=false;
+  }
+  RenderAgent(){
+    this.router.navigate(['agent-details']);
+    this.IsProperties=false;
+    this.IsApplication=false;
+    this.IsEmployer=false;
+    this.IsAgent=true;
+  }
+  
 }

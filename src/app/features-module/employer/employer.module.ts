@@ -12,6 +12,7 @@ import { EmployerDetailsComponent } from './employer-details/employer-details.co
   imports: [
     CommonModule,
     EmployerRoutingModule
-  ]
+  ],
+  exports:[]
 })
 export class EmployerModule { }

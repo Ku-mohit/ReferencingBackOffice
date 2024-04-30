@@ -1,7 +1,4 @@
-.search-btn {
-  background-image: url("../../../../assets/search.svg");
-  width: 20px;
-}
+
 .work-pull {
   display: flex;
   flex-direction: row;

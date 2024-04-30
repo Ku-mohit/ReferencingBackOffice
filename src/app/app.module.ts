@@ -5,6 +5,10 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { EmployerRoutingModule } from './features-module/employer/employer-routing.module';
+import { ApplicationRoutingModule } from './features-module/application/application-routing.module';
+import { AgentRoutingModule } from './features-module/agent/agent-routing.module';
+import { PropertiesRoutingModule } from './features-module/properties/properties-routing.module';
 
 @NgModule({
   declarations: [
@@ -14,7 +18,11 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    EmployerRoutingModule,
+    ApplicationRoutingModule,
+    AgentRoutingModule,
+    PropertiesRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
