@@ -1,5 +1,10 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { DashboardComponent } from './features-module/application/dashboard/dashboard.component';
+
+interface SideNavToggle {
+  screenWidth: number;
+  collapsed: boolean;
+}
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +12,12 @@ import { DashboardComponent } from './features-module/application/dashboard/dash
 })
 export class AppComponent {
   title = 'ReferencingBackOffice';
+
+  isSideNavCollapsed = false;
+  screenWidth = 0;
+
+  onToggleSideNav(data: SideNavToggle): void {
+    this.screenWidth = data.screenWidth;
+    this.isSideNavCollapsed = data.collapsed
+  }
 }
