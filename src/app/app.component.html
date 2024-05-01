@@ -36,7 +36,7 @@
 <!-- sidebar begin -->
 <div class="container-main">
   <div class="sidebar-container">
-    <app-side-nav></app-side-nav>
+    <app-side-nav (onToggleSideNav)="onToggleSideNav($event)"></app-side-nav>
   </div>
   <div class="content-main">
     <router-outlet></router-outlet>
