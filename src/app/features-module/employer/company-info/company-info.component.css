@@ -8,6 +8,35 @@ table tr th, table tr td{
     margin:15px;
     padding: 12px;
 }
-table tr:hover{
+.enable-hover:hover{
     background-color: rgba(181, 173, 181, 0.203);
 }
+.card-header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.options-btn, .company-title{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    
+  }
+  .options-btn .fun-btn{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #b4abab;
+    background-color: #eeee;
+    border-radius: 50%;
+    margin-left: 5px;
+    display: flex;
+    justify-content: center;
+    padding: 6px;
+  }
+  .options-btn .fun-btn:hover{
+    border: 1px solid #eeee;
+    background-color: #ffff;
+  }
