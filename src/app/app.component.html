@@ -1,17 +1,8 @@
 <!-- Navbar Begin -->
 <nav class="navbar navbar-expand-sm fixed-top">
-  <a class="navbar-brand mx-3" href="#"
-    ><img src="../assets/Images/visioinPlusLogo.png" width="100"
-  /></a>
-  <button
-    class="navbar-toggler"
-    type="button"
-    data-toggle="collapse"
-    data-target="#navbarSupportedContent"
-    aria-controls="navbarSupportedContent"
-    aria-expanded="false"
-    aria-label="Toggle navigation"
-  >
+  <a class="navbar-brand mx-3" href="#"><img src="../assets/Images/visioinPlusLogo.png" width="100" /></a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -33,13 +24,14 @@
 </nav>
 <!-- Navbar End -->
 
+
+
 <!-- sidebar begin -->
 <div class="container-main">
   <div class="sidebar-container">
     <app-side-nav (onToggleSideNav)="onToggleSideNav($event)"></app-side-nav>
   </div>
   <div class="content-main">
-    <router-outlet></router-outlet>
+    <app-body-app [collapsed]="isSideNavCollapsed" [screenWidth]="screenWidth"></app-body-app>
   </div>
 </div>
-

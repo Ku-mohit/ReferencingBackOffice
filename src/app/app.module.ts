@@ -9,11 +9,14 @@ import { EmployerRoutingModule } from './features-module/employer/employer-routi
 import { ApplicationRoutingModule } from './features-module/application/application-routing.module';
 import { AgentRoutingModule } from './features-module/agent/agent-routing.module';
 import { PropertiesRoutingModule } from './features-module/properties/properties-routing.module';
+import { BodyRoutingModule } from './features-module/body/body-routing.module';
+import { BodyAppComponent } from './features-module/body/body-app/body-app.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SideNavComponent
+    SideNavComponent,
+    BodyAppComponent,
   ],
   imports: [
     BrowserModule,
@@ -22,7 +25,8 @@ import { PropertiesRoutingModule } from './features-module/properties/properties
     EmployerRoutingModule,
     ApplicationRoutingModule,
     AgentRoutingModule,
-    PropertiesRoutingModule
+    PropertiesRoutingModule,
+    BodyRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
