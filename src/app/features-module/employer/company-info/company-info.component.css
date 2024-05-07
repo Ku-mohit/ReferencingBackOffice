@@ -11,6 +11,9 @@ table tr th, table tr td{
 .enable-hover:hover{
     background-color: rgba(181, 173, 181, 0.203);
 }
+.card:hover{
+  box-shadow:1px 2px 5px #b4abab;
+}
 .card-header{
     display: flex;
     flex-direction: row;
