@@ -17,11 +17,10 @@
         width: 100%;
 
         .logo {
-            background: #fff;
+            margin-left: auto;
             text-align: center;
             width: 3rem;
-            min-width: 3rem;
-            border-radius: 0.313rem;
+            min-width: 3rem;    
             padding: 0.313rem;
             font-size: 24px;
             font-weight: 900;
@@ -29,20 +28,22 @@
             border: none;
         }
 
-        .logo-text {
-            margin-left: 1.5rem;
-            font-size: 24px;
-            font-weight: 700;
-            color: black;
-        }
+        // .logo-text {
+        //     margin-left: 1.5rem;
+        //     font-size: 24px;
+        //     font-weight: 700;
+        //     color: black;
+        // }
 
-        .btn-close {
+        .logo-close {
             margin-left: auto;
-            cursor: pointer;
-            width: 2rem;
-            height: 2rem;
-            border-radius: 50%;
+            width: 2.5rem;
+            height: 3rem;
+            min-width: 2.5rem; 
+            font-size: 15px;
+            font-weight: 900;
             background-color: transparent;
+            cursor: pointer;
             border: none;
         }
     }
