@@ -10,11 +10,13 @@ import { ButtonModule } from '@progress/kendo-angular-buttons';
 import { FileDropModule } from '../../../../framework/ui/kendo/file-upload/file-drop.module';
 import { FileDropComponent } from '../../../../framework/ui/kendo/file-upload/file-drop.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ApplicationDetailsComponent } from './application-details/application-details.component';
 
 
 @NgModule({
     declarations: [
-        DashboardComponent
+        DashboardComponent,
+        ApplicationDetailsComponent
     ],
     imports: [
         CommonModule,

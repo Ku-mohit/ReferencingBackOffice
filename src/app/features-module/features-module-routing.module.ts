@@ -11,7 +11,7 @@ const routes: Routes = [
     loadChildren: () => import('./properties/properties.module').then(m => m.PropertiesModule)
   },
   {
-    path: 'employer',
+    path: '',
     loadChildren: () => import('./employer/employer.module').then(m => m.EmployerModule)
   },
   {

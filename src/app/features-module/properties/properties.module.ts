@@ -3,11 +3,13 @@ import { CommonModule } from '@angular/common';
 
 import { PropertiesRoutingModule } from './properties-routing.module';
 import { PropertiesDetailsComponent } from './properties-details/properties-details.component';
+import { RecordComponent } from './record/record.component';
 
 
 @NgModule({
   declarations: [
-    PropertiesDetailsComponent
+    PropertiesDetailsComponent,
+    RecordComponent
   ],
   imports: [
     CommonModule,

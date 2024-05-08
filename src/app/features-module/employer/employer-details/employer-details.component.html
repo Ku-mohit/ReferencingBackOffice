@@ -2,24 +2,24 @@
   <h4 class="text-center">Employer Details</h4>
   <div class="btn-container">
     <div class="app-btn">
-      <button class="add-company">
-        <span>ADD COMPANY</span>
+      <!-- Button trigger modal -->
+      <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        Launch demo modal
+      </button> -->
+      <button type="button" class="btn add-company" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        ADD COMPANY
       </button>
+
     </div>
     <div class="options-btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Download">
       <div class="fun-btn">
-        <img
-          src="../../../../assets/download.svg"
-          width="20"
-          alt=""
-          srcset=""
-        />
+        <img src="../../../../assets/download.svg" width="20" alt="" srcset="" />
       </div>
       <div class="fun-btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Filter">
         <img src="../../../../assets/funnel.svg" width="20" alt="" srcset="" />
       </div>
       <div class="fun-btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Refresh">
-        <img src="../../../../assets/repeat.svg" width="20" alt="" srcset="" />
+        <img src="../../../../assets/refresh.svg" width="20" alt="" srcset="" />
       </div>
     </div>
   </div>
@@ -29,12 +29,7 @@
       <div class="col-4">
         <div class="form-group">
           <label for="">Search For</label>
-          <input
-            type="text"
-            class="form-control"
-            id="searchQuery"
-            placeholder="search here"
-          />
+          <input type="text" class="form-control" id="searchQuery" placeholder="search here" />
         </div>
       </div>
       <div class="col-2 my-4">
@@ -162,5 +157,31 @@
         </li>
       </ul>
     </nav>
+  </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modalView">
+    <div class="modal-content">
+      <form [formGroup]="myCompanyForm" (ngSubmit)="onSubmit()">
+        <div class="modal-header">
+          <div class="row">
+              <div class="col">
+                  <h3 class="modal-title font-size-30" id="exampleModalLabel">Company Details</h3>
+              </div>
+          </div>      
+          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+        </div>
+        <div class="modal-body">
+          <pib-form [model]="companyModel" [fields]="companyFields" [options]="companyOptions"
+            [form]="myCompanyForm"></pib-form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">CANCEL</button>
+          <button type="button" class="btn btn-submit">SUBMIT</button>
+        </div>
+      </form>
+    </div>
   </div>
 </div>
