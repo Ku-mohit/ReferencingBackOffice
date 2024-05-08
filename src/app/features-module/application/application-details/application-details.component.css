@@ -128,4 +128,12 @@ table tr th, table tr td{
   display: flex;
   flex-direction: row;
 }
-
+.customer-details ,.property-details{
+  border: 1px solid #dad3d3;
+  border-radius: 7px;
+  width: 100%;
+  padding: 15px;
+}
+.customer-details:hover ,.property-details:hover{
+  box-shadow: 1px 2px 5px #a3a3a4;;
+}

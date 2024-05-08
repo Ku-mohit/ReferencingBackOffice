@@ -46,3 +46,7 @@
   border: 1px solid #eeee;
   background-color: #ffff;
 }
+.modalView{
+  max-width: 60%;
+  max-height: 80vh;
+}

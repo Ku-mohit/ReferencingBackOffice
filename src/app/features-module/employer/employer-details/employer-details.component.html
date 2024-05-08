@@ -163,7 +163,7 @@
 <!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modalView">
-    <div class="modal-content">
+    <div class="modal-content modal-view">
       <form [formGroup]="myCompanyForm" (ngSubmit)="onSubmit()">
         <div class="modal-header">
           <div class="row">
@@ -171,15 +171,15 @@
                   <h3 class="modal-title font-size-30" id="exampleModalLabel">Company Details</h3>
               </div>
           </div>      
-          <!-- <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <pib-form [model]="companyModel" [fields]="companyFields" [options]="companyOptions"
             [form]="myCompanyForm"></pib-form>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-cancel" data-bs-dismiss="modal">CANCEL</button>
-          <button type="button" class="btn btn-submit">SUBMIT</button>
+          <button type="button" class="btn btn-danger btn-sm" data-bs-dismiss="modal">CANCEL</button>
+          <button type="button" class="btn btn-success btn-sm">SUBMIT</button>
         </div>
       </form>
     </div>
