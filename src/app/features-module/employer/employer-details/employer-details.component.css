@@ -46,27 +46,3 @@
   border: 1px solid #eeee;
   background-color: #ffff;
 }
-
-.modalView{
-  /* margin-top: 40px; */
-  max-width: 60%; 
-  max-height: 80%; 
-}
-
-.btn-cancel{
-  color: red;
-  border-radius: 35px;
-  padding-inline: 15px;
-  border-width: 1px;
-  border-color: red;
-  margin-left: auto;
-}
-
-.btn-submit{
-  border-radius: 35px;
-  padding-inline: 15px;
-  border-width: 1px;
-  border-color: rgb(0, 0, 0);
-  background-color: black;
-  color:white;
-}
