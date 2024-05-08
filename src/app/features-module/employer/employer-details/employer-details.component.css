@@ -8,15 +8,16 @@
 }
 .btn-container {
   display: flex;
+  align-items: center;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
 .add-company {
   background-color: black;
   color:white;
   border-radius: 19px;
   padding: 7px;
-
 }
 
 .add-company:hover {

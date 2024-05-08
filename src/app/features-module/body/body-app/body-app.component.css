@@ -1,21 +1,20 @@
 .body { 
-    width: calc(100% - 40px);
+    width: calc(100% - 20px);
     height: 100vh;
-    margin-left: -40px;
+    margin-left: -50px;
     z-index: 0;
     position: absolute;
     top: 30px;
     transition: all .5s ease;
-    /* background: #f4f7fa; */
     padding: 3rem;
 }
 
 .body-trimmed {
-    width: calc(100% - 220px);
-    margin-left: 140px;
+    width: calc(100% - 200px);
+    margin-left: 130px;
 }
 
 .body-md-screen{
-    width: calc(100% - 80px);
-    margin-left: 80px;
+    width: calc(100% - 20px);
+    margin-left: -50px;
 }
