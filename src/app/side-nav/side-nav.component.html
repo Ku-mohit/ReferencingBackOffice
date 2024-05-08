@@ -1,7 +1,7 @@
 <div class="sidenav" [ngClass]="collapsed ? 'sidenav-collapsed': ''" >
     <div class="logo-container">
-        <img src="../../assets/arrow-right.svg" *ngIf="!collapsed"  class="logo" (click)="toggleCollapse()" data-bs-toggle="tooltip" data-bs-placement="right" title="Expand sidebar" />
-         <img src="../../assets/arrow-left.svg"  class="logo-close" *ngIf="collapsed" (click)="closeSidenav()" data-bs-toggle="tooltip" data-bs-placement="right" title="Collapse sidebar"/>
+        <img src="../../assets/list.svg" *ngIf="!collapsed"  class="logo" (click)="toggleCollapse()" data-bs-toggle="tooltip" data-bs-placement="right" title="Expand sidebar" />
+         <img src="../../assets/cross.svg"  class="logo-close" *ngIf="collapsed" (click)="closeSidenav()" data-bs-toggle="tooltip" data-bs-placement="right" title="Collapse sidebar"/>
        
     </div>
     <div class="scrollwrap scrollwrap_delayed">
@@ -37,7 +37,7 @@
             </li>
             <li class="sidenav-nav-item" data-bs-toggle="tooltip" data-bs-placement="right" title="Properties" [ngClass]="IsProperties === true ? 'active' : ''">
                 <a class="sidenav-nav-link" (click)="RenderProperties()">
-                    <img src="../../assets/list.svg" class="sidenav-link-icon"/>
+                    <img src="../../assets/box.svg" class="sidenav-link-icon"/>
                     <span class="sidenav-link-text"  *ngIf="collapsed">
                        Properties
                     </span>
