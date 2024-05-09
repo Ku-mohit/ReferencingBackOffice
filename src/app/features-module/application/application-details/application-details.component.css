@@ -137,3 +137,19 @@ table tr th, table tr td{
 .customer-details:hover ,.property-details:hover{
   box-shadow: 1px 2px 5px #a3a3a4;;
 }
+.employed-box{
+  display: flex;
+  justify-content: space-between;
+}
+.employed-box .status{
+  display: flex;
+  justify-content: space-between;
+}
+.option-box a{
+  text-decoration: none;
+  cursor: pointer;
+}
+.rtr-heading{
+  display: flex;
+  
+}

@@ -9,13 +9,10 @@ const routes: Routes = [
     path:'',component:DashboardComponent
   },
   {
-    path:'app-dashboard',component:DashboardComponent
+   path:'application-details',component:ApplicationDetailsComponent
   },
   {
-   path:'app-dashboard/application-details',component:ApplicationDetailsComponent
-  },
-  {
-   path:'app-dashboard/application-details/record',component:RecordComponent
+   path:'application-details/record',component:RecordComponent
   }
 ];
 

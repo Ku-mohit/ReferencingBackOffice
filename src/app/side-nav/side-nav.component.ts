@@ -68,7 +68,7 @@ export class SideNavComponent {
     }
   }
   RenderApplication(){
-    this.router.navigate(['app-dashboard']);
+    this.router.navigate(['/']);
     this.IsProperties=false;
     this.IsApplication=true;
     this.IsEmployer=false;

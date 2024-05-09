@@ -6,15 +6,14 @@
 .workpull-counter {
   height: 50px;
   width: auto;
-  border: 1px solid rgb(171, 185, 228);
-  border-radius: 10px;
   display: flex;
   align-items: center;
   align-content: center;
   justify-content: space-between;
   padding: 12px;
-  background-color: rgb(171, 185, 228);
-  box-shadow: 1px 2px 5px rgb(69, 71, 80);
+  border-radius: 15px;
+  background: #e0e0e0;
+  
   margin-right: 10px;
 }
 .workpull-counter .counter-title,
@@ -25,9 +24,11 @@
 }
 
 .workpull-counter:hover{
-color:rgb(104, 89, 89);
-background-color: bisque;
-border: 1px solid bisque;
+  box-shadow: 10px 10px 13px #acacac,
+  -10px -10px 13px #ffffff;
+  background-color: #cc1a44;
+  color:#ffffff
+
 }
 
 .application-btn .app-btn {
