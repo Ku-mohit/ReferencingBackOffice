@@ -1,0 +1,14 @@
+<div class="container-main">
+  <div class="text-center"><h1 class="display-6">Test Out</h1></div>
+  <div class="container">
+    <form [formGroup]="myForm" (ngSubmit)="onSubmit()">
+        <pib-form
+          [model]="model"
+          [fields]="fields"
+          [options]="options"
+          [form]="myForm"
+        ></pib-form>
+        
+    </form>
+  </div>
+</div>

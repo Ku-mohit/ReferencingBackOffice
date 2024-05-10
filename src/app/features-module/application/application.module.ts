@@ -11,12 +11,15 @@ import { FileDropModule } from '../../../../framework/ui/kendo/file-upload/file-
 import { FileDropComponent } from '../../../../framework/ui/kendo/file-upload/file-drop.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ApplicationDetailsComponent } from './application-details/application-details.component';
+import { TestcpmComponent } from './testcpm/testcpm.component';
+import { DataService } from '@progress/kendo-angular-dropdowns/common/data.service';
 
 
 @NgModule({
     declarations: [
         DashboardComponent,
-        ApplicationDetailsComponent
+        ApplicationDetailsComponent,
+        TestcpmComponent
     ],
     imports: [
         CommonModule,
@@ -35,6 +38,7 @@ import { ApplicationDetailsComponent } from './application-details/application-d
           
         }),
         
-    ]
+    ],
+   
 })
 export class ApplicationModule { }

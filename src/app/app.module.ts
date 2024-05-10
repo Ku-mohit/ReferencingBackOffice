@@ -11,6 +11,8 @@ import { AgentRoutingModule } from './features-module/agent/agent-routing.module
 import { PropertiesRoutingModule } from './features-module/properties/properties-routing.module';
 import { BodyRoutingModule } from './features-module/body/body-routing.module';
 import { BodyAppComponent } from './features-module/body/body-app/body-app.component';
+import { DataService } from '../../framework/ui/kendo/grid/src/data.service';
+import { HttpClient, HttpClientModule, HttpHandler } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -26,9 +28,10 @@ import { BodyAppComponent } from './features-module/body/body-app/body-app.compo
     ApplicationRoutingModule,
     AgentRoutingModule,
     PropertiesRoutingModule,
-    BodyRoutingModule
+    BodyRoutingModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [DataService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

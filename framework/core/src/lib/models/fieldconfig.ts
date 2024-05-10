@@ -10,7 +10,7 @@ import { Subject, Observable } from 'rxjs';
 import { FieldType } from '../templates/field.type';
 import { FieldWrapper } from '../templates/field.wrapper';
 import { ValidationMessageOption } from '../models';
-import { Type } from '@angular/core';
+import { TemplateRef, Type } from '@angular/core';
 
 export interface FormlyFieldConfig<Props = FormlyFieldProps & { [additionalProperties: string]: any }> {
   /**
@@ -196,14 +196,28 @@ export interface FormlyFieldConfig<Props = FormlyFieldProps & { [additionalPrope
   /** @deprecated */
   optionsTypes?: string[];
   gridOptions?: {
-    rowHeight :number,
-    data:any;
-    columnDefs : [{
-      headerName:any,
-      field:any,
-      sortable:boolean,
-      width:any,
+    rowHeight :string,
+    data?:  Observable<any[]>;
+    pageable?:boolean,
+    pageSize?:number,
+    sorting?:boolean,
+    searchall?:boolean,
+    exportToExcel?:boolean,
+    fileName? : 'download',
+    exportToPdf?:boolean,
+    actionButton?:boolean,
+    actionDetails?:[{
+      type:any,
+      props?: Props;
     }]
+    columnDefs : [{
+      headerName:string,
+      field:string,
+      sortable:boolean,
+      width:number,
+    }],
+    serverRendering?:boolean,
+    apiEndPoint?:string,
   }
 }
 
@@ -226,6 +240,7 @@ export interface FormlyFieldProps {
   hidden?: boolean;
   max?: number;
   min?: number;
+  format?:string;
 
   minLength?: number;
   /** @deprecated use `minLength` */
@@ -234,15 +249,13 @@ export interface FormlyFieldProps {
   maxLength?: number;
   /** @deprecated use `maxLength` */
   maxlength?: number;
-
+  tooltip?:string | TemplateRef<any>;
   pattern?: string | RegExp;
   required?: boolean;
   tabindex?: number;
   readonly?: boolean;
   attributes?: { [key: string]: string | number };
   step?: number;
-  format?:string;
-  
   focus?: FormlyAttributeEvent;
   blur?: FormlyAttributeEvent;
   keyup?: FormlyAttributeEvent;
@@ -252,6 +265,7 @@ export interface FormlyFieldProps {
   keypress?: FormlyAttributeEvent;
   onAddressSelect?: FormlyAttributeEvent;
   onComponentLoad?: FormlyAttributeEvent;
+  onFileUploadLoad?: FormlyAttributeEvent;
 }
 
 export type FormlyHookFn = (field: FormlyFieldConfig) => void;
